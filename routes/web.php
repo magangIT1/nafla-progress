@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/show/finance', [DashboardController::class, 'showFinance'])->name('view.finance');
+Route::get('/show/crypto', [DashboardController::class, 'showCrypto'])->name('view.crypto');
+Route::get('/show/event', [DashboardController::class, 'showEvent'])->name('view.event');
+Route::get('/show/helpdesk', [DashboardController::class, 'showHelpdesk'])->name('view.helpdesk');
+Route::get('/show/sales', [DashboardController::class, 'showSales'])->name('view.sales');
