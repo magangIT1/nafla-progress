@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -15,7 +17,22 @@ class DashboardController extends Controller
     }
 
     public function showFinance(){
-        return view('components.finance');
+        $show['title'] = 'finance';
+        $show['paragraf'] = 'paragraf 1 sadnalksd';
+        $show['detail'] = 'detail finance';
+        $view['judul'] = 'hello world';
+
+        return view('components.finance' , $show, $view);
+    }
+
+    public function showProduct (){
+        $show = [
+            'title' => 'Product',
+            'product' => Product::all(),
+            // 'category' => Category::all()
+        ];
+
+        return view('components.product', $show);
     }
 
     public function showCrypto(){

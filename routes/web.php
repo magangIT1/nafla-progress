@@ -23,3 +23,4 @@ Route::get('/show/crypto', [DashboardController::class, 'showCrypto'])->name('vi
 Route::get('/show/event', [DashboardController::class, 'showEvent'])->name('view.event');
 Route::get('/show/helpdesk', [DashboardController::class, 'showHelpdesk'])->name('view.helpdesk');
 Route::get('/show/sales', [DashboardController::class, 'showSales'])->name('view.sales');
+Route::get('/show/product', [DashboardController::class, 'showProduct'])->name('view.product');

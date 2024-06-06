@@ -3,12 +3,12 @@
     <head>
         @include('partials.header')
     </head>
+    @include('partials.sidebar')
     <body>
-        @include('partials.sidebar')
         @yield('body')
-        @include('partials.script')
-        @yield('script')
         {{-- @include('sweetalert::alert') --}}
-        @include('partials.footer')
+        {{-- @include('partials.footer') --}}
     </body>
+    @yield('script')
+    @include('partials.script')
 </html>

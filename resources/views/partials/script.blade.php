@@ -17,13 +17,13 @@
  <link rel="stylesheet" href="{{ asset('/dasbyte/lib/assets/js/db.data.js') }}">
  <link rel="stylesheet" href="{{ asset('/dasbyte/lib/assets/js/db.crypto.js') }}">
 
- <script src="../lib/jquery/jquery.min.js"></script>
- <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
- <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
- <script src="../lib/jqvmap/jquery.vmap.min.js"></script>
- <script src="../lib/jqvmap/maps/jquery.vmap.world.js"></script>
- <script src="../lib/apexcharts/apexcharts.min.js"></script>
+ <script src="{{ asset('/dasbyte/lib/jquery/jquery.min.js')}}"></script>
+ <script src="{{ asset('/dasbyte/lib/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+ <script src="{{ asset('/dasbyte/lib/perfect-scrollbar/perfect-scrollbar.min.js')}}"></script>
+ <script src="{{ asset('/dasbyte/lib/jqvmap/jquery.vmap.min.js')}}"></script>
+ <script src="{{ asset('/dasbyte/lib/jqvmap/maps/jquery.vmap.world.js')}}"></script>
+ <script src="{{ asset('/dasbyte/lib/apexcharts/apexcharts.min.js')}}"></script>
 
- <script src="../assets/js/script.js"></script>
- <script src="../assets/js/db.data.js"></script>
- <script src="../assets/js/db.analytics.js"></script>
+ <script src="{{ asset('/dasbyte/assets/js/script.js')}}"></script>
+ <script src="{{ asset('/dasbyte/assets/js/db.data.js')}}"></script>
+ <script src="{{ asset('/dasbyte/assets/js/db.analytics.js')}}"></script>

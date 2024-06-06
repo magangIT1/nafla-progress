@@ -54,7 +54,7 @@
                          <span>Storage Management</span></a>
                  </li>
                  <li class="nav-item">
-                     <a href="../dashboard/product.html" class="nav-link"><i class="ri-suitcase-2-line"></i>
+                     <a href="{{url('/show/product')}}" class="nav-link"><i class="ri-suitcase-2-line"></i>
                          <span>Product Management</span></a>
                  </li>
              </ul>
